@@ -1,0 +1,19 @@
+package co.edu.uco.publiuco.dto;
+
+import java.util.UUID;
+
+public final class TipoRelacionInstitucionDTO {
+	
+	private UUID identificador;
+	private String nombre;
+	private String descripcion;
+	public UUID getIdentificador() {
+		return identificador;
+	}
+	public void setIdentificador(UUID identificador) {
+		this.identificador = identificador;
+	}
+	
+	
+
+}
