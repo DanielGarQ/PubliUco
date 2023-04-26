@@ -50,24 +50,6 @@ public class EstadoTipoRelacionInstitucionDTO {
 		this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
 		return this;
 	}
-
-	@Override
-	public String toString() {
-		return "EstadoTipoRelacionInstitucionDTO [identificador=" + identificador + ", nombre=" + nombre
-				+ ", descripcion=" + descripcion + "]";
-	}
-	
-	public static void main(String[] args) {
-		
-		EstadoTipoRelacionInstitucionDTO objeto = new EstadoTipoRelacionInstitucionDTO();
-		objeto.setIdentificador(UtilUUID.generateNewUUID());
-		objeto.setNombre("Docente");
-		objeto.setDescripcion("soy docente");
-		System.out.println(objeto);
-		
-		EstadoTipoRelacionInstitucionDTO objetoDos = EstadoTipoRelacionInstitucionDTO.create().setDescripcion("soy docente").setIdentificador(UtilUUID.generateNewUUID()).setNombre("Docente");
-		System.out.println(objetoDos);
-	}
 	
 
 }

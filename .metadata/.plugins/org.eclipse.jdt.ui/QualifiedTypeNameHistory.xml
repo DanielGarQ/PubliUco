@@ -2,7 +2,12 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilText"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilObject"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.dto.EstadoTipoRelacionInstitucionDTO"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilUUID"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilObject"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.Assembler"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.TipoRelacionInstitucionDomain"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.dto.TipoRelacionInstitucionDTO"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.EstadoTipoRelacionInstitucionAssembler"/>
 </qualifiedTypeNameHistroy>
