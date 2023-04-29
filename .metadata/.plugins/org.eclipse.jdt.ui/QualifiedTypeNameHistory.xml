@@ -8,6 +8,19 @@
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.Assembler"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.TipoRelacionInstitucionDomain"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.dto.TipoRelacionInstitucionDTO"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.EstadoTipoRelacionInstitucionDAO"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.TipoRelacionInstitucionDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.EstadoTipoRelacionInstitucionSqlServerDAO"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.TipoRelacionInstitucionEntity"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.TipoRelacionInstitucionSqlServerDAO"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.factory.relational.sqlserver.SqlServerDAOFactory"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.postgresql.PostgresSqlDAOFactory"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.EstadoTipoRelacionInstitucionDomain"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.business.EstadoTipoRelacionInstitucionBusiness"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.factory.DAOFactory"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.EstadoTipoRelacionInstitucionAssembler"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity"/>
 </qualifiedTypeNameHistroy>
