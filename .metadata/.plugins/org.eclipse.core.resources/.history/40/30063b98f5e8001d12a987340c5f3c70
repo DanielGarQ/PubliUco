@@ -1,0 +1,58 @@
+package co.edu.uco.publiuco.entities;
+
+import java.util.UUID;
+
+import co.edu.uco.publiuco.crosscutting.utils.UtilText;
+import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
+
+public final class EstadoEscritorEntity {
+	
+	private UUID identificador;
+	private String nombre;
+	private String descripcion;
+	
+	public EstadoEscritorEntity() {
+		super();
+		setIdentificador(UtilUUID.DEFAULT_UUID);
+		setNombre(UtilText.getUtilText().getDefaultValue());
+		setDescripcion(UtilText.EMPTY);
+	}
+	
+	public EstadoEscritorEntity(final UUID identificador,final String nombre,final String descripcion) {
+		super();
+		setIdentificador(identificador);
+		setNombre(nombre);
+		setDescripcion(descripcion);
+	}
+	
+	public static EstadoEscritorEntity create() {
+		return new EstadoEscritorEntity();
+	}
+	
+	public final UUID getIdentificador() {
+		return identificador;
+	}
+	public final EstadoEscritorEntity setIdentificador(final UUID identificador) {
+		this.identificador = UtilUUID.getDefault(identificador);
+		return this;
+	}
+	public final String getNombre() {
+		return nombre;
+	}
+	public final EstadoEscritorEntity setNombre(final String nombre) {
+		this.nombre = UtilText.getUtilText().applyTrim(nombre);
+		return this;
+	}
+	public final String getDescripcion() {
+		return descripcion;
+	}
+	public final EstadoEscritorEntity setDescripcion(final String descripcion) {
+		this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
+		return this;
+	}
+	
+	
+	
+	
+
+}

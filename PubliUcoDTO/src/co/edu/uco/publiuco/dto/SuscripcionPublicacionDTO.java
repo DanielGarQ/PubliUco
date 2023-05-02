@@ -18,7 +18,7 @@ public final class SuscripcionPublicacionDTO {
 		setPlanPublicacion(PlanPublicacionDTO.create());
 	}
 	
-	public SuscripcionPublicacionDTO(final UUID identificador, final PerfilDTO perfil, final EscritorDTO escritor) {
+	public SuscripcionPublicacionDTO(final UUID identificador, final PerfilDTO perfil, final PlanPublicacionDTO planPublicacion) {
 		super();
 		setIdentificador(identificador);
 		setPerfil(perfil);

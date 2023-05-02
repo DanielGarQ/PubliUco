@@ -1,0 +1,54 @@
+package co.edu.uco.publiuco.entities;
+
+import java.util.UUID;
+
+import co.edu.uco.publiuco.crosscutting.utils.UtilText;
+import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
+
+public final class TipoComentarioRevisorEntity {
+	
+	private UUID identificador;
+	private String nombre;
+	private String descripcion;
+	
+	public TipoComentarioRevisorEntity() {
+		super();
+		setIdentificador(UtilUUID.DEFAULT_UUID);
+		setNombre(UtilText.getUtilText().getDefaultValue());
+		setDescripcion(UtilText.EMPTY);
+	}
+	
+	public TipoComentarioRevisorEntity(final UUID identificador,final String nombre,final String descripcion) {
+		super();
+		setIdentificador(identificador);
+		setNombre(nombre);
+		setDescripcion(descripcion);
+	}
+	
+	public static TipoComentarioRevisorEntity create() {
+		return new TipoComentarioRevisorEntity();
+	}
+	
+	public final UUID getIdentificador() {
+		return identificador;
+	}
+	public final TipoComentarioRevisorEntity setIdentificador(final UUID identificador) {
+		this.identificador = UtilUUID.getDefault(identificador);
+		return this;
+	}
+	public final String getNombre() {
+		return nombre;
+	}
+	public final TipoComentarioRevisorEntity setNombre(final String nombre) {
+		this.nombre = UtilText.getUtilText().applyTrim(nombre);
+		return this;
+	}
+	public final String getDescripcion() {
+		return descripcion;
+	}
+	public final TipoComentarioRevisorEntity setDescripcion(final String descripcion) {
+		this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
+		return this;
+	}
+
+}

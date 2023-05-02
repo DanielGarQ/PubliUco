@@ -1,0 +1,79 @@
+package co.edu.uco.publiuco.entities;
+
+import java.util.UUID;
+
+import co.edu.uco.publiuco.crosscutting.utils.UtilObject;
+import co.edu.uco.publiuco.crosscutting.utils.UtilText;
+import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
+
+public final class CategoriaEntity {
+	
+	private UUID identificador;
+	private CategoriaEntity categoriaPadre;
+	private String nombre;
+	private String descripcion;
+	private EstadoCategoriaDTO estado;
+	
+	public CategoriaEntity() {
+		super();
+		setIdentificador(UtilUUID.DEFAULT_UUID);
+		setCategoriaPadre(CategoriaEntity.create());
+		setNombre(UtilText.getUtilText().getDefaultValue());
+		setDescripcion(UtilText.EMPTY);
+		setEstado(EstadoCategoriaDTO.create());
+	}
+	
+	public CategoriaEntity(final UUID identificador, final CategoriaEntity categoriaPadre, final String nombre,final String descripcion, final EstadoCategoriaDTO estado) {
+		super();
+		setIdentificador(identificador);
+		setNombre(nombre);
+		setDescripcion(descripcion);
+		setEstado(estado);
+	}
+	
+	public static CategoriaEntity create() {
+		return new CategoriaEntity();
+	}
+	
+	public final UUID getIdentificador() {
+		return identificador;
+	}
+	public final CategoriaEntity setIdentificador(final UUID identificador) {
+		this.identificador = UtilUUID.getDefault(identificador);
+		return this;
+	}
+	
+	public final CategoriaEntity getCategoriaPadre() {
+		return categoriaPadre;
+	}
+
+	public final CategoriaEntity setCategoriaPadre(CategoriaEntity categoriaPadre) {
+		this.categoriaPadre = UtilObject.getDefault(categoriaPadre, CategoriaEntity.create());
+		return this;
+	}
+
+	public final String getNombre() {
+		return nombre;
+	}
+	public final CategoriaEntity setNombre(final String nombre) {
+		this.nombre = UtilText.getUtilText().applyTrim(nombre);
+		return this;
+	}
+	public final String getDescripcion() {
+		return descripcion;
+	}
+	public final CategoriaEntity setDescripcion(final String descripcion) {
+		this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
+		return this;
+	}
+
+	public EstadoCategoriaDTO getEstado() {
+		return estado;
+	}
+
+	public final CategoriaEntity setEstado(EstadoCategoriaDTO estado) {
+		this.estado = UtilObject.getDefault(estado, EstadoCategoriaDTO.create());
+		return this;
+	}
+
+}

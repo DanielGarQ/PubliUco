@@ -20,7 +20,7 @@ public final class PerfilDTO {
 		setRecomendacionesAutor(recomendacionesAutor);
 	}
 	
-	public PerfilDTO(final UUID identificador,final String nombre,final String descripcion, final EstadoTipoRelacionInstitucionDTO estado) {
+	public PerfilDTO(final UUID identificador,final LectorDTO lector,final boolean recomendacionesCategoria, final boolean recomendacionesAutor) {
 		super();
 		setIdentificador(identificador);
 		setLector(lector);

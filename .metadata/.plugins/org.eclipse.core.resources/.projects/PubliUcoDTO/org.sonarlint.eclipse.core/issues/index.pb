@@ -20,15 +20,11 @@ l
 ^
 .src/co/edu/uco/publiuco/dto/EstadoPlanDTO.java,7\c\7c2443a1925794016d7f5aa2a8c9c8234345125b
 e
-5src/co/edu/uco/publiuco/dto/EstadoPreferenicaDTO.java,4\1\417432f38d57713cc823048ff91d52da91309364
-e
 5src/co/edu/uco/publiuco/dto/EstadoPreferenciaDTO.java,5\e\5e8c7c7a83c146c991d39ac27c6c1c5ee72e9aae
 e
 5src/co/edu/uco/publiuco/dto/EstadoPublicacionDTO.java,a\1\a10116a65d59084dd8ad5efa939209d04b3014a0
 b
 2src/co/edu/uco/publiuco/dto/EstadoRevisionDTO.java,e\b\eb90f66e6a3f3a170e36516d22f50d788d710534
-a
-1src/co/edu/uco/publiuco/dto/EstadorevisorDTO.java,8\b\8b37a18914c324a5c5c3c1a08856a4ce0a47ff6c
 a
 1src/co/edu/uco/publiuco/dto/EstadoRevisorDTO.java,7\8\781279b2aa3764610ab252351ca8afcb129743ac
 e

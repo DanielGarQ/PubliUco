@@ -18,7 +18,7 @@ public class SuscripcionCategoriaDTO {
 		setPlanCategoria(planCategoria);
 	}
 	
-	public SuscripcionCategoriaDTO(final UUID identificador, final PerfilDTO perfil, final EscritorDTO escritor) {
+	public SuscripcionCategoriaDTO(final UUID identificador, final PerfilDTO perfil, final PlanCategoriaDTO planCategoria) {
 		super();
 		setIdentificador(identificador);
 		setPerfil(perfil);

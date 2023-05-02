@@ -1,0 +1,59 @@
+package co.edu.uco.publiuco.entities;
+
+import java.util.UUID;
+
+import co.edu.uco.publiuco.crosscutting.utils.UtilObject;
+import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
+
+public class PreferenciaEscritorDTO {
+	
+	private UUID identificador;
+	private PerfilDTO perfil;
+	private EscritorDTO escritor;
+	
+	public PreferenciaEscritorDTO() {
+		super();
+		setIdentificador(UtilUUID.DEFAULT_UUID);
+		setPerfil(PerfilDTO.create());
+		setEscritor(EscritorDTO.create());
+	}
+	
+	public PreferenciaEscritorDTO(final UUID identificador, final PerfilDTO perfil, final EscritorDTO escritor) {
+		super();
+		setIdentificador(identificador);
+		setPerfil(perfil);
+		setEscritor(escritor);
+	}
+	
+	public static PreferenciaEscritorEntity create() {
+		return new PreferenciaEscritorEntity();
+	}
+
+	public final UUID getIdentificador() {
+		return identificador;
+	}
+
+	public final PreferenciaEscritorEntity setIdentificador(final UUID identificador) {
+		this.identificador = UtilUUID.getDefault(identificador);
+		return this;
+	}
+
+	public final PerfilDTO getPerfil() {
+		return perfil;
+	}
+
+	public final PreferenciaEscritorEntity setPerfil(final PerfilDTO perfil) {
+		this.perfil = UtilObject.getDefault(perfil, PerfilDTO.create());
+		return this;
+	}
+
+	public final EscritorDTO getEscritor() {
+		return escritor;
+	}
+
+	public final PreferenciaEscritorEntity setEscritor(final EscritorDTO escritor) {
+		this.escritor = UtilObject.getDefault(escritor, EscritorDTO.create());
+		return this;
+	}
+
+}

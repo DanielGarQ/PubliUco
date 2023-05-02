@@ -17,6 +17,7 @@ public final class TipoIdentificacionDTO {
 	public TipoIdentificacionDTO() {
 		super();
 		setIdentificador(UtilUUID.DEFAULT_UUID);
+		setCodigo(UtilText.EMPTY);
 		setNombre(UtilText.getUtilText().getDefaultValue());
 		setDescripcion(UtilText.EMPTY);
 		setEstado(EstadoTipoIdentificacionDTO.create());
@@ -25,6 +26,7 @@ public final class TipoIdentificacionDTO {
 	public TipoIdentificacionDTO(final UUID identificador,final String nombre,final String descripcion, final EstadoTipoIdentificacionDTO estado) {
 		super();
 		setIdentificador(identificador);
+		setCodigo(codigo);
 		setNombre(nombre);
 		setDescripcion(descripcion);
 		setEstado(estado);

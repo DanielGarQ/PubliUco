@@ -26,6 +26,7 @@ public final class CategoriaDTO {
 	public CategoriaDTO(final UUID identificador, final CategoriaDTO categoriaPadre, final String nombre,final String descripcion, final EstadoCategoriaDTO estado) {
 		super();
 		setIdentificador(identificador);
+		setCategoriaPadre(categoriaPadre);
 		setNombre(nombre);
 		setDescripcion(descripcion);
 		setEstado(estado);

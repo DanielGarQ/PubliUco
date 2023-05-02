@@ -1,0 +1,68 @@
+package co.edu.uco.publiuco.entities;
+
+import java.util.UUID;
+
+import co.edu.uco.publiuco.crosscutting.utils.UtilObject;
+import co.edu.uco.publiuco.crosscutting.utils.UtilText;
+import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
+
+public final class TipoEscritorEntity {
+	
+	private UUID identificador;
+	private String nombre;
+	private String descripcion;
+	private EstadoTipoEscritorDTO estado;
+	
+	public TipoEscritorEntity() {
+		super();
+		setIdentificador(UtilUUID.DEFAULT_UUID);
+		setNombre(UtilText.getUtilText().getDefaultValue());
+		setDescripcion(UtilText.EMPTY);
+		setEstado(EstadoTipoEscritorDTO.create());
+	}
+	
+	public TipoEscritorEntity(final UUID identificador,final String nombre,final String descripcion, final EstadoTipoEscritorDTO estado) {
+		super();
+		setIdentificador(identificador);
+		setNombre(nombre);
+		setDescripcion(descripcion);
+		setEstado(estado);
+	}
+	
+	public static TipoEscritorEntity create() {
+		return new TipoEscritorEntity();
+	}
+	
+	public final UUID getIdentificador() {
+		return identificador;
+	}
+	public final TipoEscritorEntity setIdentificador(final UUID identificador) {
+		this.identificador = UtilUUID.getDefault(identificador);
+		return this;
+	}
+	public final String getNombre() {
+		return nombre;
+	}
+	public final TipoEscritorEntity setNombre(final String nombre) {
+		this.nombre = UtilText.getUtilText().applyTrim(nombre);
+		return this;
+	}
+	public final String getDescripcion() {
+		return descripcion;
+	}
+	public final TipoEscritorEntity setDescripcion(final String descripcion) {
+		this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
+		return this;
+	}
+
+	public EstadoTipoEscritorDTO getEstado() {
+		return estado;
+	}
+
+	public final TipoEscritorEntity setEstado(EstadoTipoEscritorDTO estado) {
+		this.estado = UtilObject.getDefault(estado, EstadoTipoEscritorDTO.create());
+		return this;
+	}
+
+
+}
