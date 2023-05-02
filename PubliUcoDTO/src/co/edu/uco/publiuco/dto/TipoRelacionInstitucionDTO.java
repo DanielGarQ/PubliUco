@@ -64,8 +64,6 @@ public class TipoRelacionInstitucionDTO {
 		return this;
 	}
 
-	
-	
 
 }
 
