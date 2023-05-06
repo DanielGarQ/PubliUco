@@ -1,0 +1,55 @@
+package co.edu.uco.publiuco.business.domain;
+
+import java.util.UUID;
+
+import co.edu.uco.publiuco.crosscutting.utils.UtilText;
+import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
+
+public final class EstadoPreferenciaDomain {
+	
+	private static final EstadoPreferenciaDomain DEFAULT_OBJECT = new EstadoPreferenciaDomain();
+	private UUID identificador;
+	private String nombre;
+	private String descripcion;
+	
+	private EstadoPreferenciaDomain() {
+		super();
+		setIdentificador(UtilUUID.DEFAULT_UUID);
+		setNombre(UtilText.getUtilText().getDefaultValue());
+		setDescripcion(UtilText.EMPTY);
+	}
+	
+	public EstadoPreferenciaDomain(final UUID identificador,final String nombre,final String descripcion) {
+		super();
+		setIdentificador(identificador);
+		setNombre(nombre);
+		setDescripcion(descripcion);
+	}
+	
+	public static EstadoPreferenciaDomain getDefaultObject() {
+		return DEFAULT_OBJECT;
+	}
+	
+	public final UUID getIdentificador() {
+		return identificador;
+	}
+	private final EstadoPreferenciaDomain setIdentificador(final UUID identificador) {
+		this.identificador = UtilUUID.getDefault(identificador);
+		return this;
+	}
+	public final String getNombre() {
+		return nombre;
+	}
+	private final EstadoPreferenciaDomain setNombre(final String nombre) {
+		this.nombre = UtilText.getUtilText().applyTrim(nombre);
+		return this;
+	}
+	public final String getDescripcion() {
+		return descripcion;
+	}
+	private final EstadoPreferenciaDomain setDescripcion(final String descripcion) {
+		this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
+		return this;
+	}
+
+}

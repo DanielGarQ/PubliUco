@@ -9,8 +9,6 @@ h
 8src/co/edu/uco/publiuco/crosscutting/utils/UtilText.java,1\6\165917753e12908198950430169d560466096635
 h
 8src/co/edu/uco/publiuco/crosscutting/utils/UtilUUID.java,8\8\88bf5eaf4fe7e5f7e60a6397d09d9e1a3b1809ce
-u
-Esrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoexception.java,2\c\2c2e6af46eb709e6b6f808e4b2b8c1a56487ce10
 y
 Isrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoDataException.java,4\3\43dfd7d3ce21afa7130e1647b1846cab254b0017
 u
@@ -23,8 +21,6 @@ x
 Hsrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoApiException.java,2\d\2d2e90b4813c6b445854a4d5c35956c6dfc217ec
 Å
 Qsrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoCrossCuttingException.java,5\c\5cfb0e7ea5923d4ec54c27d69ed4d39c506dcfa7
-x
-Hsrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoDTOException.java,d\a\dab7c2e42ff4b54ef244f9c3c3801321ddafbe83
 x
 Hsrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoDtoException.java,e\9\e9664792412f20f148cd18b96bf09bd1f99ed0e7
 g

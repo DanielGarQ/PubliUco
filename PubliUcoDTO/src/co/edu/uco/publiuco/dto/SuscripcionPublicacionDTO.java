@@ -51,7 +51,7 @@ public final class SuscripcionPublicacionDTO {
 		return planPublicacion;
 	}
 
-	public final SuscripcionPublicacionDTO setPlanPublicacion(final PlanPublicacionDTO planPublicacionDTO) {
+	public final SuscripcionPublicacionDTO setPlanPublicacion(final PlanPublicacionDTO planPublicacion) {
 		this.planPublicacion = UtilObject.getDefault(planPublicacion, PlanPublicacionDTO.create());
 		return this;
 	}

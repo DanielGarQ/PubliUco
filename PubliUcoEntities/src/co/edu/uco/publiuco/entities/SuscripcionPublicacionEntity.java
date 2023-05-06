@@ -50,7 +50,7 @@ public final class SuscripcionPublicacionEntity {
 		return planPublicacion;
 	}
 
-	private final void setPlanPublicacion(final PlanPublicacionEntity planPublicacionDTO) {
+	private final void setPlanPublicacion(final PlanPublicacionEntity planPublicacion) {
 		this.planPublicacion = UtilObject.getDefault(planPublicacion, PlanPublicacionEntity.getDefaultObject());
 	}
 

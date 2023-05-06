@@ -1,5 +1,7 @@
 package co.edu.uco.publiuco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.publiuco.business.assembler.Assembler;
 import co.edu.uco.publiuco.business.domain.EstadoTipoRelacionInstitucionDomain;
 import co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity;
@@ -35,6 +37,11 @@ public final class EstadoTipoRelacionInstitucionAssembler implements Assembler<E
 	@Override
 	public EstadoTipoRelacionInstitucionDomain toDomainFromEntity(EstadoTipoRelacionInstitucionEntity entity) {
 		return new EstadoTipoRelacionInstitucionDomain(entity.getIdentificador(), entity.getNombre(), entity.getDescripcion());
+	}
+	
+	public final List<EstadoTipoRelacionInstitucionDomain> toDomainListFromEntityList(final List<EstadoTipoRelacionInstitucionEntity> entityList) {
+		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
+		
 	}
 
 }

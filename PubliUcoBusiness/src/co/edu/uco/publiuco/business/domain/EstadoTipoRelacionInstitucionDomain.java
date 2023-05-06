@@ -4,7 +4,6 @@ import java.util.UUID;
 
 import co.edu.uco.publiuco.crosscutting.utils.UtilText;
 import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
-import co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity;
 
 public final class EstadoTipoRelacionInstitucionDomain {
 	
@@ -34,23 +33,21 @@ public final class EstadoTipoRelacionInstitucionDomain {
 	public final UUID getIdentificador() {
 		return identificador;
 	}
-	private final EstadoTipoRelacionInstitucionDomain setIdentificador(final UUID identificador) {
+	private final void setIdentificador(final UUID identificador) {
 		this.identificador = UtilUUID.getDefault(identificador);
-		return this;
 	}
 	public final String getNombre() {
 		return nombre;
 	}
-	private final EstadoTipoRelacionInstitucionDomain setNombre(final String nombre) {
+	private final void setNombre(final String nombre) {
 		this.nombre = UtilText.getUtilText().applyTrim(nombre);
-		return this;
 	}
 	public final String getDescripcion() {
 		return descripcion;
 	}
-	private final EstadoTipoRelacionInstitucionDomain setDescripcion(final String descripcion) {
+	private final void setDescripcion(final String descripcion) {
 		this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
-		return this;
+
 	}
 
 	
