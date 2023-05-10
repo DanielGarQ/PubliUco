@@ -1,8 +1,8 @@
 
-U
-java:S1165	"Make this "type" field final.(³å¥şÿÿÿÿ8úƒäúı0H¡RMINORZ
-CODE_SMELL
 W
 java:S1165
-"$Make this "userMessage" field final.(ıŸÀ‰8úƒäúı0H¢RMINORZ
+"$Make this "userMessage" field final.(ıŸÀ‰8úƒäúı0H˜RMINORZ
+CODE_SMELL
+U
+java:S1165	"Make this "type" field final.(³å¥şÿÿÿÿ8úƒäúı0H™RMINORZ
 CODE_SMELL

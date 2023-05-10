@@ -1,10 +1,10 @@
 
 ^
-java:S1168!"+Return an empty collection instead of null.(¥¹ï8­ÉÁÒü0HRMAJORZ
+java:S1168!"+Return an empty collection instead of null.(¥¹ï8­ÉÁÒü0H•RMAJORZ
 CODE_SMELL
 m
-java:S1854":Remove this useless assignment to local variable "result".(ú«è8­ÉÁÒü0H’RMAJORZ
+java:S1854":Remove this useless assignment to local variable "result".(ú«è8­ÉÁÒü0H”RMAJORZ
 CODE_SMELL
 ^
-java:S1481"+Remove this unused "result" local variable.(ú«è8­ÉÁÒü0H“RMINORZ
+java:S1481"+Remove this unused "result" local variable.(ú«è8­ÉÁÒü0H’RMINORZ
 CODE_SMELL

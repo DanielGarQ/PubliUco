@@ -1,19 +1,19 @@
 
-d
-java:S1172"1Remove this unused method parameter "connection".(·éÚï8æ¦ÆÒü0HêRMAJORZ
-CODE_SMELL
-i
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HìRINFOZ
-CODE_SMELL
 ^
-java:S1168"+Return an empty collection instead of null.(¥¹ï8æ¦ÆÒü0HíRMAJORZ
+java:S1168"+Return an empty collection instead of null.(¥¹ï8æ¦ÆÒü0HÙRMAJORZ
+CODE_SMELL
+d
+java:S1172"1Remove this unused method parameter "connection".(·éÚï8æ¦ÆÒü0HÜRMAJORZ
 CODE_SMELL
 i
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HğRINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HŞRINFOZ
 CODE_SMELL
 i
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HñRINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HßRINFOZ
 CODE_SMELL
 i
-java:S1135#"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HòRINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HàRINFOZ
+CODE_SMELL
+i
+java:S1135#"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8æ¦ÆÒü0HáRINFOZ
 CODE_SMELL

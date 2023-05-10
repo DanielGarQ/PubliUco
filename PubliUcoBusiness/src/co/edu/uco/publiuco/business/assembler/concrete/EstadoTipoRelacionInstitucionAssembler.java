@@ -21,7 +21,7 @@ public final class EstadoTipoRelacionInstitucionAssembler implements Assembler<E
 	
 	@Override
 	public EstadoTipoRelacionInstitucionDTO toDtoFromDomain(EstadoTipoRelacionInstitucionDomain domain) {
-		return EstadoTipoRelacionInstitucionDTO.create().setIdentificador(domain.getIdentificador()).setNombre(domain.getNombre()).setNombre(domain.getDescripcion());
+		return EstadoTipoRelacionInstitucionDTO.create().setIdentificador(domain.getIdentificador()).setNombre(domain.getNombre()).setDescripcion(domain.getDescripcion());
 	}
 
 	@Override

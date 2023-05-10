@@ -8,7 +8,7 @@ import co.edu.uco.publiuco.business.domain.EstadoTipoRelacionInstitucionDomain;
 import co.edu.uco.publiuco.data.dao.factory.DAOFactory;
 import co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity;
 
-public class EstadoTipoRelacionInstitucionBusinessImpl implements EstadoTipoRelacionInstitucionBusiness {
+public final class EstadoTipoRelacionInstitucionBusinessImpl implements EstadoTipoRelacionInstitucionBusiness {
 
 	private DAOFactory daoFactory;
 
@@ -39,7 +39,7 @@ public class EstadoTipoRelacionInstitucionBusinessImpl implements EstadoTipoRela
 				.toEntityFromDomain(domain);
 		daoFactory.getEstadoTipoRelacionInstitucionDAO().update(entity);
 
-		// Necesitamos que el assembler convierta de List<Entity> a List<Domain>
+		
 
 	}
 

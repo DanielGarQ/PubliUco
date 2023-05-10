@@ -52,9 +52,4 @@ public final class UtilText {
 	final boolean matchPattern(final String text, final String pattern) {
 		return getDefault(text).matches(getDefault(pattern));
 	}
-	
-	public static void main(String[] args) {
-		System.out.println(getUtilText().applyTrim(""));
-	}
-
 }

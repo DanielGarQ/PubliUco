@@ -2,8 +2,8 @@ package co.edu.uco.publiuco.data.dao.factory;
 
 import co.edu.uco.publiuco.data.dao.EstadoTipoRelacionInstitucionDAO;
 import co.edu.uco.publiuco.data.dao.TipoRelacionInstitucionDAO;
+import co.edu.uco.publiuco.data.dao.factory.relational.postgresql.PostgresSqlDAOFactory;
 import co.edu.uco.publiuco.data.dao.factory.relational.sqlserver.SqlServerDAOFactory;
-import co.edu.uco.publiuco.data.dao.relational.postgresql.PostgresSqlDAOFactory;
 
 public abstract class DAOFactory {
 

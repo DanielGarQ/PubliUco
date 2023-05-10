@@ -90,7 +90,7 @@ public final class ObservacionRevisionDTO {
 		return this;
 	}
 
- final EstadoObservacionRevisorDTO getEstado() {
+ public final EstadoObservacionRevisorDTO getEstado() {
 		return estado;
 	}
 

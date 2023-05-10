@@ -37,14 +37,13 @@ public final class TipoRelacionInstitucionDomain {
 	public final UUID getIdentificador() {
 		return identificador;
 	}
-	public final TipoRelacionInstitucionDomain setIdentificador(final UUID identificador) {
+	private final void setIdentificador(final UUID identificador) {
 		this.identificador = UtilUUID.getDefault(identificador);
-		return this;
 	}
 	public final String getNombre() {
 		return nombre;
 	}
-	public final void setNombre(final String nombre) {
+	private final void setNombre(final String nombre) {
 		this.nombre = UtilText.getUtilText().applyTrim(nombre);
 	}
 	public final String getDescripcion() {

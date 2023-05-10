@@ -2,6 +2,7 @@ package co.edu.uco.publiuco.data.dao.factory.relational.sqlserver;
 
 import java.sql.Connection;
 
+import co.edu.uco.publiuco.crosscutting.utils.UtilSql;
 import co.edu.uco.publiuco.data.dao.EstadoTipoRelacionInstitucionDAO;
 import co.edu.uco.publiuco.data.dao.TipoRelacionInstitucionDAO;
 import co.edu.uco.publiuco.data.dao.factory.DAOFactory;
@@ -26,7 +27,7 @@ public final class SqlServerDAOFactory extends DAOFactory {
 
 	@Override
 	public void cerrarConexion() {
-		// // It's your homework
+		UtilSql.closeConnection(connection);
 
 	}
 

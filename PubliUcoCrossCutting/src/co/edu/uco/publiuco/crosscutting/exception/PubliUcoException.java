@@ -27,7 +27,7 @@ public abstract class PubliUcoException extends RuntimeException {
 		return type;
 	}
 
-	public final void setType(ExceptionType type) {
+	private final void setType(ExceptionType type) {
 		this.type = UtilObject.getDefault(type, ExceptionType.GENERAL);
 	}
 
@@ -35,7 +35,7 @@ public abstract class PubliUcoException extends RuntimeException {
 		return userMessage;
 	}
 
-	public final void setUserMessage(String userMessage) {
+	public final void setUserMessage(final String userMessage) {
 		this.userMessage = UtilText.getUtilText().getDefault(userMessage);
 	}
 	

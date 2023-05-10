@@ -25,3 +25,7 @@ x
 Hsrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoDtoException.java,e\9\e9664792412f20f148cd18b96bf09bd1f99ed0e7
 g
 7src/co/edu/uco/publiuco/crosscutting/utils/UtilSql.java,6\a\6ab6603c5adff12e21e6c1e3592f5d3904406461
+{
+Ksrc/co/edu/uco/publiuco/crosscutting/exception/PubliUcoEntityException.java,3\5\357752473735c9b6a9d2f3194081df28728ef1ec
+h
+8src/co/edu/uco/publiuco/crosscutting/utils/Messages.java,3\a\3a959f8d84b83f5f6c6ec906e454e22d75d9320b
