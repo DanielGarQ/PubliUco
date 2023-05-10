@@ -1,7 +1,7 @@
 
-r
-java:S18545":Remove this useless assignment to local variable "domain".(ÿèîáþÿÿÿÿ8»­çòþ0H¹RMAJORZ
-CODE_SMELL
 c
-java:S14815"+Remove this unused "domain" local variable.(ÿèîáþÿÿÿÿ8»­çòþ0HºRMINORZ
+java:S14815"+Remove this unused "domain" local variable.(ÿèîáþÿÿÿÿ8»­çòþ0H¼RMINORZ
+CODE_SMELL
+r
+java:S18545":Remove this useless assignment to local variable "domain".(ÿèîáþÿÿÿÿ8»­çòþ0H¾RMAJORZ
 CODE_SMELL
