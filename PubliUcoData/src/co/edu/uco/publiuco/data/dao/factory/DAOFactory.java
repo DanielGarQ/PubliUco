@@ -1,7 +1,56 @@
 package co.edu.uco.publiuco.data.dao.factory;
 
+import co.edu.uco.publiuco.data.dao.AdministradorCategoriaDAO;
+import co.edu.uco.publiuco.data.dao.CalificacionDAO;
+import co.edu.uco.publiuco.data.dao.CategoriaAdministradorCategoriaDAO;
+import co.edu.uco.publiuco.data.dao.CategoriaDAO;
+import co.edu.uco.publiuco.data.dao.ComentarioLectorDAO;
+import co.edu.uco.publiuco.data.dao.ComentarioRevisorDAO;
+import co.edu.uco.publiuco.data.dao.EscritorDAO;
+import co.edu.uco.publiuco.data.dao.EscritorPublicacionDAO;
+import co.edu.uco.publiuco.data.dao.EstadoAdministradorCategoriaDAO;
+import co.edu.uco.publiuco.data.dao.EstadoCategoriaDAO;
+import co.edu.uco.publiuco.data.dao.EstadoComentarioLectorDAO;
+import co.edu.uco.publiuco.data.dao.EstadoEscritorDAO;
+import co.edu.uco.publiuco.data.dao.EstadoLectorDAO;
+import co.edu.uco.publiuco.data.dao.EstadoObservacionRevisorDAO;
+import co.edu.uco.publiuco.data.dao.EstadoPlanDAO;
+import co.edu.uco.publiuco.data.dao.EstadoPreferenciaDAO;
+import co.edu.uco.publiuco.data.dao.EstadoPublicacionDAO;
+import co.edu.uco.publiuco.data.dao.EstadoRevisionDAO;
+import co.edu.uco.publiuco.data.dao.EstadoRevisorDAO;
+import co.edu.uco.publiuco.data.dao.EstadoSuscripcionDAO;
+import co.edu.uco.publiuco.data.dao.EstadoTipoAccesoDAO;
+import co.edu.uco.publiuco.data.dao.EstadoTipoEscritorDAO;
+import co.edu.uco.publiuco.data.dao.EstadoTipoIdentificacionDAO;
 import co.edu.uco.publiuco.data.dao.EstadoTipoRelacionInstitucionDAO;
+import co.edu.uco.publiuco.data.dao.EstadoVersionDAO;
+import co.edu.uco.publiuco.data.dao.HistorialAccesoPublicacionDAO;
+import co.edu.uco.publiuco.data.dao.LectorDAO;
+import co.edu.uco.publiuco.data.dao.ObservacionRevisionDAO;
+import co.edu.uco.publiuco.data.dao.PalabraClavePublicacionDAO;
+import co.edu.uco.publiuco.data.dao.PerfilDAO;
+import co.edu.uco.publiuco.data.dao.PersonaDAO;
+import co.edu.uco.publiuco.data.dao.PlanCategoriaDAO;
+import co.edu.uco.publiuco.data.dao.PlanPublicacionDAO;
+import co.edu.uco.publiuco.data.dao.PreferenciaCategoriaDAO;
+import co.edu.uco.publiuco.data.dao.PreferenciaEscritorDAO;
+import co.edu.uco.publiuco.data.dao.PublicacionDAO;
+import co.edu.uco.publiuco.data.dao.ReporteDAO;
+import co.edu.uco.publiuco.data.dao.RespuestaDAO;
+import co.edu.uco.publiuco.data.dao.RevisionDAO;
+import co.edu.uco.publiuco.data.dao.RevisorDAO;
+import co.edu.uco.publiuco.data.dao.RevisorRevisionDAO;
+import co.edu.uco.publiuco.data.dao.SuscripcionCategoriaDAO;
+import co.edu.uco.publiuco.data.dao.SuscripcionPublicacionDAO;
+import co.edu.uco.publiuco.data.dao.TipoAccesoDAO;
+import co.edu.uco.publiuco.data.dao.TipoComentarioRevisorDAO;
+import co.edu.uco.publiuco.data.dao.TipoEscritorDAO;
+import co.edu.uco.publiuco.data.dao.TipoIdentificacionDAO;
 import co.edu.uco.publiuco.data.dao.TipoRelacionInstitucionDAO;
+import co.edu.uco.publiuco.data.dao.TipoReporteDAO;
+import co.edu.uco.publiuco.data.dao.TipoRevisionDAO;
+import co.edu.uco.publiuco.data.dao.VersionDAO;
 import co.edu.uco.publiuco.data.dao.factory.relational.postgresql.PostgresSqlDAOFactory;
 import co.edu.uco.publiuco.data.dao.factory.relational.sqlserver.SqlServerDAOFactory;
 
@@ -42,5 +91,103 @@ public abstract class DAOFactory {
 	public abstract EstadoTipoRelacionInstitucionDAO getEstadoTipoRelacionInstitucionDAO();
 
 	public abstract TipoRelacionInstitucionDAO getTipoRelacionInstitucionDAO();
+	
+	public abstract PersonaDAO getPersonaDAO();
+	
+	public abstract AdministradorCategoriaDAO getAdministradorCategoriaDAO();
+	
+	public abstract CalificacionDAO getCalificacionDAO();
+	
+	public abstract CategoriaDAO getCategoriaDAO();
+	
+	public abstract CategoriaAdministradorCategoriaDAO getCategoriaAdministradorCategoriaDAO();
+	
+	public abstract ComentarioLectorDAO getComentarioLectorDAO();
+	
+	public abstract ComentarioRevisorDAO getComentarioRevisorDAO();
+	
+	public abstract EscritorDAO getEscritorDAO();
+	
+	public abstract EscritorPublicacionDAO getEscritorPublicacionDAO();
+	
+	public abstract EstadoAdministradorCategoriaDAO getEstadoAdministradorCategoriaDAO();
+	
+	public abstract EstadoCategoriaDAO getEstadoCategoriaDAO();
+	
+	public abstract EstadoComentarioLectorDAO getEstadoComentarioLectorDAO();
+	
+	public abstract EstadoEscritorDAO getEstadoEscritorDAO();
+	
+	public abstract EstadoLectorDAO getEstadoLectorDAO();
+	
+	public abstract EstadoObservacionRevisorDAO getEstadoObservacionRevisorDAO();
+	
+	public abstract EstadoPlanDAO getEstadoPlanDAO();
+	
+	public abstract EstadoPreferenciaDAO getEstadoPreferenciaDAO();
+	
+	public abstract EstadoPublicacionDAO getEstadoPublicacionDAO();
+	
+	public abstract EstadoRevisionDAO getEstadoRevisionDAO();
+	
+	public abstract EstadoRevisorDAO getEstadoRevisorDAO();
+	
+	public abstract EstadoSuscripcionDAO getEstadoSuscripcionDAO();
+	
+	public abstract EstadoTipoAccesoDAO getEstadoTipoAccesoDAO();
+	
+	public abstract EstadoTipoEscritorDAO getEstadoTipoEscritorDAO();
+	
+	public abstract EstadoTipoIdentificacionDAO getEstadoTipoIdentificacionDAO();
+	
+	public abstract EstadoVersionDAO getEstadoVersionDAO();
+	
+	public abstract HistorialAccesoPublicacionDAO getHistorialAccesoPublicacionDAO();
+	
+	public abstract LectorDAO getLectorDAO();
+	
+	public abstract ObservacionRevisionDAO getObservacionRevisionDAO();
+	
+	public abstract PalabraClavePublicacionDAO getPalabraClavePublicacionDAO();
+	
+	public abstract PerfilDAO getPerfilDAO();
+	
+	public abstract PlanCategoriaDAO getPlanCategoriaDAO();
+	
+	public abstract PlanPublicacionDAO getPlanPublicacionDAO();
+	
+	public abstract PreferenciaCategoriaDAO getPreferenciaCategoriaDAO();
+	
+	public abstract PreferenciaEscritorDAO getPreferenciaEscritorDAO();
+	
+	public abstract PublicacionDAO getPublicacionDAO();
+	
+	public abstract ReporteDAO getReporteDAO();
+	
+	public abstract RespuestaDAO getRespuestaDAO();
+	
+	public abstract RevisionDAO getRevisionDAO();
+	
+	public abstract RevisorDAO getRevisorDAO();
+	
+	public abstract RevisorRevisionDAO getRevisorRevisionDAO();
+	
+	public abstract SuscripcionCategoriaDAO getSuscripcionCategoriaDAO();
+	
+	public abstract SuscripcionPublicacionDAO getSuscripcionPublicacionDAO();
+	
+	public abstract TipoAccesoDAO getTipoAccesoDAO();
+	
+	public abstract TipoComentarioRevisorDAO getTipoComentarioRevisorDAO();
+	
+	public abstract TipoEscritorDAO getTipoEscritorDAO();
+	
+	public abstract TipoIdentificacionDAO getTipoIdentificacionDAO();
+	
+	public abstract TipoReporteDAO getTipoReporteDAO();
+	
+	public abstract TipoRevisionDAO getTipoRevisionDAO();
+	
+	public abstract VersionDAO getVersionDAO();
 
 }
