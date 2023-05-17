@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.RevisorRevisionSqlServerDAO"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.RevisorRevisionDAO"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.business.SuscripcionCategoriaBusiness"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.SuscripcionCategoriaAssembler"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.SuscripcionCategoriaEntity"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.SuscripcionCategoriaDomain"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.SuscripcionCategoriaSqlServerDAO"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.SuscripcionCategoriaDAO"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.business.SuscripcionPublicacionBusiness"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.SuscripcionPublicacionDomain"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.SuscripcionPublicacionEntity"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.SuscripcionPublicacionAssembler"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.SuscripcionPublicacionSqlServerDAO"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.VersionAssembler"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.VersionSqlServerDAO"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.VersionDAO"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilSql"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.SqlDAO"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.exception.PubliUcoDataException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilObject"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilUUID"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilText"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

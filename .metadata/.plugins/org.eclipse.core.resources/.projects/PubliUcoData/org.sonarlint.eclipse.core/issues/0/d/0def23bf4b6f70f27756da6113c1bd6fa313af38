@@ -1,19 +1,18 @@
 
+`	java:S108?")Either remove or fill this block of code.(†Ç‘ƒøÿÿÿÿ8ôÄ†»‚1HÕ>RMAJORZ
+CODE_SMELL
 ^
-java:S1168"+Return an empty collection instead of null.(¥¹ï8ä¦ÆÒü0HºRMAJORZ
+java:S1168G"+Return an empty collection instead of null.(¥¹ï8ä¦ÆÒü0Hå>RMAJORZ
 CODE_SMELL
-i
-java:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ä¦ÆÒü0H½RINFOZ
+[	java:S108D")Either remove or fill this block of code.(®ËúÃ8ôÄ†»‚1H×>RMAJORZ
 CODE_SMELL
-c
-java:S1172"1Remove this unused method parameter "connection".(–»Ì/8ä¦ÆÒü0H¾RMAJORZ
+[	java:S108B")Either remove or fill this block of code.(»Œ¿é8ôÄ†»‚1HÖ>RMAJORZ
 CODE_SMELL
-i
-java:S1135#"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ä¦ÆÒü0HÀRINFOZ
+s
+java:S1226“"GIntroduce a new variable instead of reusing the parameter "parameters".(Êé±n8åÒÈ¼‚1Hè>RMINORZBUG
+w
+java:S2147D"DCombine this catch with the one at line 66, which has the same body.(®ËúÃ8åÒÈ¼‚1Hé>RMINORZ
 CODE_SMELL
-i
-java:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ä¦ÆÒü0HÁRINFOZ
-CODE_SMELL
-i
-java:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ä¦ÆÒü0HÂRINFOZ
+q
+java:S1854“">Remove this useless assignment to local variable "parameters".(Êé±n8åÒÈ¼‚1Hí>RMAJORZ
 CODE_SMELL

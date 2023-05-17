@@ -1,7 +1,0 @@
-package co.edu.uco.publiuco.business.assembler.concrete;
-
-import co.edu.uco.publiuco.business.assembler.Assembler;
-
-public final class TipoAccesoAssembler{
-
-}

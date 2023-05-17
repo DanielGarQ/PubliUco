@@ -213,3 +213,5 @@ Rsrc/co/edu/uco/publiuco/data/dao/relational/sqlserver/TipoReporteSqlServerDAO.j
 Ssrc/co/edu/uco/publiuco/data/dao/relational/sqlserver/TipoRevisionSqlServerDAO.java,9\0\90e194568e30452785cbe300e16083c05ae36c20
 ~
 Nsrc/co/edu/uco/publiuco/data/dao/relational/sqlserver/VersionSqlServerDAO.java,4\9\4906f71c4418ee433a63627b4134c262406b17e8
+g
+7src/co/edu/uco/publiuco/data/dao/relational/SqlDAO.java,d\1\d1a0dfbfe26d02dca6b22d83f7a7309a834d104f
