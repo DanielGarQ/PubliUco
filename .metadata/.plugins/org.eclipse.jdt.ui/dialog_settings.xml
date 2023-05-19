@@ -63,7 +63,7 @@
 		<item key="FinalModifier" value="true"/>
 		<item key="SynchronizedModifier" value="false"/>
 		<item key="Comments" value="false"/>
-		<item key="VisibilityModifier" value="1"/>
+		<item key="VisibilityModifier" value="2"/>
 	</section>
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item key="DIALOG_X_ORIGIN" value="149"/>

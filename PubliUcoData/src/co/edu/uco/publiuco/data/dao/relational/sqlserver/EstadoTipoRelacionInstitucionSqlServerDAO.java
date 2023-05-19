@@ -34,15 +34,15 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 			
 		}catch (final SQLException exception) {
 			
-			var userMessage = "Se ha presentado un problema tratando de registrar la información del nuevo Estado";
-			var technicalMessage = "Un problema de tipo SQLException dentro del metodo create de la clase EstadoTipoRelacionInstitucionSqlServerDAO. Por favor verifique la traza completa del error...";
+			var userMessage = "Se ha presentado un problema tratando de registrar la información del nuevo Estado tipo relacion institucion";
+			var technicalMessage = "se ha presentado un problema de  tipo SQLException  dentro del metodo create de la clase EstadoTipoRelacionInstitucionSqlServerDAO. Por favor verifique la traza completa del error...";
 			
 			throw PubliUcoDataException.create(technicalMessage, userMessage, exception);
 			
 		}catch (final Exception exception) {
 			
-			var userMessage = "Se ha presentado un problema inesperado tratando de registrar la información del nuevo Estado";
-			var technicalMessage = "Un problema inesperado dentro del metodo create de la clase EstadoTipoRelacionInstitucionSqlServerDAO. Por favor verifique la traza completa del error...";
+			var userMessage = "Se ha presentado un problema inesperado tratando de registrar la información del nuevo Estado tipo relacion institucion";
+			var technicalMessage = "se ha presentado un problema inesperado dentro del metodo create de la clase EstadoTipoRelacionInstitucionSqlServerDAO. Por favor verifique la traza completa del error...";
 			
 			throw PubliUcoDataException.create(technicalMessage, userMessage, exception);
 			
@@ -74,7 +74,7 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 	@Override
 	public final void update(final EstadoTipoRelacionInstitucionEntity entity) {
 		
-		var sqlStatement = "UPDATE EstadoTipoRelacionInstitucion SET nombre= ?, Descripcion= ? WHERE codigo=?";
+		var sqlStatement = "UPDATE EstadoTipoRelacionInstitucion SET nombre= ?, Descripcion= ? WHERE identificador=?";
 		
 		try (var preparedStatement = getConnection().prepareStatement(sqlStatement)){
 			
@@ -86,14 +86,14 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 			
 		}catch (final SQLException exception) {
 			
-			var userMessage = "Se ha presentado un problema tratando de modificar la información del nuevo Estado";
+			var userMessage = "Se ha presentado un problema tratando de modificar la información del nuevo Estado tipo relacion institucion deseado...";
 			var technicalMessage = "Un problema de tipo SQLException dentro del metodo update de la clase EstadoTipoRelacionInstitucionSqlServerDAO. Por favor verifique la traza completa del error...";
 			
 			throw PubliUcoDataException.create(technicalMessage, userMessage, exception);
 			
 		}catch (final Exception exception) {
 			
-			var userMessage = "Se ha presentado un problema inesperado tratando de modificar la información del nuevo Estado";
+			var userMessage = "Se ha presentado un problema inesperado tratando de modificar la información del nuevo Estado tipo relación institución deseado...";
 			var technicalMessage = "Un problema inesperado dentro del metodo update de la clase EstadoTipoRelacionInstitucionSqlServerDAO. Por favor verifique la traza completa del error...";
 			
 			throw PubliUcoDataException.create(technicalMessage, userMessage, exception);
@@ -104,7 +104,7 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 
 	@Override
 	public final void delete(final EstadoTipoRelacionInstitucionEntity entity) {
-		var sqlStatement = "DELETE FROM EstadoTipoRelacionInstitucion WHERE codigo=?";
+		var sqlStatement = "DELETE FROM EstadoTipoRelacionInstitucion WHERE identificador=?";
 		
 		try (var preparedStatement = getConnection().prepareStatement(sqlStatement)){
 			
@@ -114,7 +114,7 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 			
 		}catch (final SQLException exception) {
 			
-			var userMessage = "Se ha presentado un problema tratando de dar de baja la información del nuevo Estado";
+			var userMessage = "Se ha presentado un problema tratando de dar de baja la información del nuevo Estado tipo relación institucion";
 			var technicalMessage = "Un problema de tipo SQLException dentro del metodo create de la clase EstadoTipoRelacionInstitucionSqlServerDAO. Por favor verifique la traza completa del error...";
 			
 			throw PubliUcoDataException.create(technicalMessage, userMessage, exception);
@@ -131,23 +131,22 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 	}
 
 	@Override
-	protected String prepareSelect() {
+	protected final String prepareSelect() {
 		return "SELECT identificador, nombre, descripcion";
 	}
 
 	@Override
-	protected String prepareFrom() {
+	protected final String prepareFrom() {
 		return "FROM EstadoTipoRelacionInstitucion";
 	}
 
 	@Override
-	protected String prepareWhere(EstadoTipoRelacionInstitucionEntity entity, List<Object> parameters) {
+	protected final String prepareWhere(EstadoTipoRelacionInstitucionEntity entity, List<Object> parameters) {
 		
 		final var where = new StringBuilder("");
-		parameters = UtilObject.getDefault(null, null);
+		parameters = UtilObject.getDefault(parameters, new ArrayList<>());
 		var setWhere = true;
 		
-		return where.toString();
 		
 		if(!UtilObject.isNull(entity)) {
 			
@@ -160,17 +159,19 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 			if (!UtilText.getUtilText().isEmpty(entity.getNombre())) {
 				parameters.add(entity.getNombre());
 				where.append(setWhere ? "WHERE " : "AND").append("nombre=? ");
+				setWhere = false;
 			}
 			
 			if (!UtilText.getUtilText().isEmpty(entity.getDescripcion())) {
 				parameters.add(entity.getDescripcion());
-				where.append("WHERE descripçion LIKE %?%");
+				where.append(setWhere ? "WHERE " : "AND").append("descripçion LIKE %?% ");
 			}
 		}
+		return where.toString();
 	}
 
 	@Override
-	protected String prepareOrderBy() {
+	protected final String prepareOrderBy() {
 		return "ORDER BY nombre ASC";
 	}
 

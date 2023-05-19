@@ -28,5 +28,9 @@ private static final String UUID_RE = "[a-f0-9]{8}([-][a-f0-9]{4}){3}[-][a-f0-9]
 		return UtilObject.isNull(uuidValue) ? DEFAULT_UUID : uuidValue;
 	}
 	
+	public static final boolean isDefault(final UUID uuidValue) {
+		return DEFAULT_UUID.equals(getDefault(uuidValue));
+	}
+	
 
 }

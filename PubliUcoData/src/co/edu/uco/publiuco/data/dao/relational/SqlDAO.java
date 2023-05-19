@@ -14,14 +14,14 @@ public abstract class SqlDAO<E> {
 		setConnection(connection);
 	}
 	
-	protected Connection getConnection() {
+	protected final Connection getConnection() {
 		return connection;
 	}
 	
 	private final void setConnection(final Connection connection) {
 		if (!UtilSql.connectionIsOpen(connection)) {
-			var userMessage = " se ha presentado un problema tratando de llevar a cabo la operacion deseada.";
-			var technicalMessage = " No se ha podido crear el SqlDAO,";
+			var userMessage = " se ha presentado un problema tratando de llevar a cabo la operacion deseada. Por favor intende de nuevo, si el problema persiste, contacte al administrador de la aplicacion...";
+			var technicalMessage = " No se ha podido crear el SqlDAO,debido a que la conexion no está abierta...";
 			
 			throw PubliUcoDataException.create(technicalMessage, userMessage);
 		}
