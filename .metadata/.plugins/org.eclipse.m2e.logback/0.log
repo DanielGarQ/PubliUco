@@ -6839,3 +6839,43 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2023-05-19 13:28:33,620 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\main\resources
 2023-05-19 13:28:33,625 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-05-19 13:28:33,626 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\test\resources
+2023-05-19 16:10:41,058 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-05-19 17:25:31,563 [Worker-43: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PubliUcoCrossCutting: co.edu.uco.publiuco:PubliUcoCrossCutting:0.0.1-SNAPSHOT with classifier  to /PubliUcoCrossCutting/target/classes
+2023-05-19 17:25:31,570 [Worker-43: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PubliUcoEntities: co.edu.uco.publiuco:PubliUcoEntities:0.0.1-SNAPSHOT with classifier  to /PubliUcoEntities/target/classes
+2023-05-19 17:25:31,908 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:25:31,911 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\main\resources
+2023-05-19 17:25:31,914 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:25:31,916 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\test\resources
+2023-05-19 17:26:35,748 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:26:35,749 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\main\resources
+2023-05-19 17:26:35,753 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:26:35,754 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\test\resources
+2023-05-19 17:35:51,632 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:35:51,634 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\main\resources
+2023-05-19 17:35:51,636 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:35:51,637 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\test\resources
+2023-05-19 17:38:58,848 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:38:58,850 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\main\resources
+2023-05-19 17:38:58,853 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:38:58,854 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\test\resources
+2023-05-19 17:44:28,977 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:44:28,979 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\main\resources
+2023-05-19 17:44:28,981 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 17:44:28,982 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\test\resources
+2023-05-19 18:11:45,396 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 18:11:45,399 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\main\resources
+2023-05-19 18:11:45,401 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 18:11:45,403 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoData\src\test\resources
+2023-05-19 18:55:21,209 [Worker-67: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PubliUcoCrossCutting: co.edu.uco.publiuco:PubliUcoCrossCutting:0.0.1-SNAPSHOT with classifier  to /PubliUcoCrossCutting/target/classes
+2023-05-19 18:55:21,217 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 18:55:21,219 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoEntities\src\main\resources
+2023-05-19 18:55:21,221 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 18:55:21,222 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoEntities\src\test\resources
+2023-05-19 18:55:21,389 [Worker-67: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PubliUcoCrossCutting: co.edu.uco.publiuco:PubliUcoCrossCutting:0.0.1-SNAPSHOT with classifier  to /PubliUcoCrossCutting/target/classes
+2023-05-19 18:55:21,390 [Worker-67: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PubliUcoEntities: co.edu.uco.publiuco:PubliUcoEntities:0.0.1-SNAPSHOT with classifier  to /PubliUcoEntities/target/classes
+2023-05-19 18:55:21,390 [Worker-67: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PubliUcoDTO: co.edu.uco.publiuco:PubliUcoDTO:0.0.1-SNAPSHOT with classifier  to /PubliUcoDTO/target/classes
+2023-05-19 18:55:21,390 [Worker-67: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/PubliUcoData: co.edu.uco.publiuco:PubliUcoData:0.0.1-SNAPSHOT with classifier  to /PubliUcoData/target/classes
+2023-05-19 18:55:21,398 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 18:55:21,399 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoBusiness\src\main\resources
+2023-05-19 18:55:21,401 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-19 18:55:21,403 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Daniel\Documents\MyWorkSpace\PubliUcoBusiness\src\test\resources
