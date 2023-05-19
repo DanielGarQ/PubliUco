@@ -7,7 +7,6 @@ import co.edu.uco.publiuco.business.domain.EstadoPlanDomain;
 import co.edu.uco.publiuco.dto.EstadoPlanDTO;
 import co.edu.uco.publiuco.entities.EstadoPlanEntity;
 
-
 public final class EstadoPlanAssembler implements Assembler<EstadoPlanDomain, EstadoPlanDTO, EstadoPlanEntity> {
 	
 	private static final Assembler<EstadoPlanDomain, EstadoPlanDTO, EstadoPlanEntity> INSTANCE = new EstadoPlanAssembler();
@@ -44,5 +43,11 @@ public final class EstadoPlanAssembler implements Assembler<EstadoPlanDomain, Es
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<EstadoPlanDTO> toDtoListFromDomainList(List<EstadoPlanDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
+
 
 }

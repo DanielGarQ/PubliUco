@@ -44,5 +44,10 @@ public final class LectorAssembler implements Assembler<LectorDomain, LectorDTO,
 	public List<LectorDomain> toDomainListFromEntityList(List<LectorEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<LectorDTO> toDtoListFromDomainList(List<LectorDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

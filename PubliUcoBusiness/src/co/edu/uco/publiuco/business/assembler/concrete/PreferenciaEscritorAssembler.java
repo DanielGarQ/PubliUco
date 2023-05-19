@@ -1,11 +1,11 @@
 package co.edu.uco.publiuco.business.assembler.concrete;
 
 import java.util.List;
-
 import co.edu.uco.publiuco.business.assembler.Assembler;
 import co.edu.uco.publiuco.business.domain.PreferenciaEscritorDomain;
 import co.edu.uco.publiuco.dto.PreferenciaEscritorDTO;
 import co.edu.uco.publiuco.entities.PreferenciaEscritorEntity;
+
 public final class PreferenciaEscritorAssembler implements Assembler<PreferenciaEscritorDomain, PreferenciaEscritorDTO, PreferenciaEscritorEntity> {
 	
 	private static final Assembler<PreferenciaEscritorDomain, PreferenciaEscritorDTO, PreferenciaEscritorEntity> INSTANCE = new PreferenciaEscritorAssembler();
@@ -42,6 +42,11 @@ public final class PreferenciaEscritorAssembler implements Assembler<Preferencia
 	@Override
 	public List<PreferenciaEscritorDomain> toDomainListFromEntityList(List<PreferenciaEscritorEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
+	}
+	
+	@Override
+	public List<PreferenciaEscritorDTO> toDtoListFromDomainList(List<PreferenciaEscritorDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
 	}
 
 }

@@ -43,5 +43,10 @@ public final class TipoAccesoAssembler implements Assembler<TipoAccesoDomain, Ti
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<TipoAccesoDTO> toDtoListFromDomainList(List<TipoAccesoDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

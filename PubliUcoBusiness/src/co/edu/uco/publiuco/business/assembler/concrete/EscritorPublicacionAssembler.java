@@ -44,5 +44,11 @@ public final class EscritorPublicacionAssembler implements Assembler<EscritorPub
 	public List<EscritorPublicacionDomain> toDomainListFromEntityList(List<EscritorPublicacionEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<EscritorPublicacionDTO> toDtoListFromDomainList(List<EscritorPublicacionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
+
 
 }

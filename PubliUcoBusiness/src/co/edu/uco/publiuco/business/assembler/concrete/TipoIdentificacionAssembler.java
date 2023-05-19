@@ -44,5 +44,10 @@ public final class TipoIdentificacionAssembler implements Assembler<TipoIdentifi
 	public List<TipoIdentificacionDomain> toDomainListFromEntityList(List<TipoIdentificacionEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<TipoIdentificacionDTO> toDtoListFromDomainList(List<TipoIdentificacionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

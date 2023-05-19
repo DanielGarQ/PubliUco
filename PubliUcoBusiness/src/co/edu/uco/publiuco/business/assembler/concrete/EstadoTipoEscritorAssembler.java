@@ -43,5 +43,10 @@ public final class EstadoTipoEscritorAssembler implements Assembler<EstadoTipoEs
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<EstadoTipoEscritorDTO> toDtoListFromDomainList(List<EstadoTipoEscritorDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

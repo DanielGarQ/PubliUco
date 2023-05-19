@@ -44,5 +44,10 @@ public final class SuscripcionCategoriaAssembler implements Assembler<Suscripcio
 	public List<SuscripcionCategoriaDomain> toDomainListFromEntityList(List<SuscripcionCategoriaEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<SuscripcionCategoriaDTO> toDtoListFromDomainList(List<SuscripcionCategoriaDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

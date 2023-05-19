@@ -43,5 +43,11 @@ public final class EstadoPreferenciaAssembler implements Assembler<EstadoPrefere
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<EstadoPreferenciaDTO> toDtoListFromDomainList(List<EstadoPreferenciaDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
+
 
 }

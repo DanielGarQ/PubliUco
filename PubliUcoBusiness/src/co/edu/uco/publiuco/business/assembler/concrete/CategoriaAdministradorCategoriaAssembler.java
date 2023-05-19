@@ -44,5 +44,11 @@ public final class CategoriaAdministradorCategoriaAssembler implements Assembler
 	public List<CategoriaAdministradorCategoriaDomain> toDomainListFromEntityList(List<CategoriaAdministradorCategoriaEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<CategoriaAdministradorCategoriaDTO> toDtoListFromDomainList(List<CategoriaAdministradorCategoriaDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
+
 
 }

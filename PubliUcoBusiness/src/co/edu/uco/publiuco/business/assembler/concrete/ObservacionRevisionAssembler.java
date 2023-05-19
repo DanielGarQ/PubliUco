@@ -44,5 +44,10 @@ public final class ObservacionRevisionAssembler implements Assembler<Observacion
 	public List<ObservacionRevisionDomain> toDomainListFromEntityList(List<ObservacionRevisionEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<ObservacionRevisionDTO> toDtoListFromDomainList(List<ObservacionRevisionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

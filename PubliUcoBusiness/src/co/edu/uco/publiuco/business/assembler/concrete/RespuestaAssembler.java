@@ -43,5 +43,10 @@ public final class RespuestaAssembler implements Assembler<RespuestaDomain, Resp
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<RespuestaDTO> toDtoListFromDomainList(List<RespuestaDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

@@ -44,5 +44,10 @@ public final class TipoEscritorAssembler implements Assembler<TipoEscritorDomain
 	public List<TipoEscritorDomain> toDomainListFromEntityList(List<TipoEscritorEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<TipoEscritorDTO> toDtoListFromDomainList(List<TipoEscritorDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

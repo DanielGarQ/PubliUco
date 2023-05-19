@@ -1,18 +1,18 @@
 
-`	java:S108?")Either remove or fill this block of code.(Ü«ëÉ¯ˇˇˇˇ8ÙƒÜªÇ1H’>RMAJORZ
+[	java:S108D")Either remove or fill this block of code.(ÆÀ˙√8ÙƒÜªÇ1H∂BRMAJORZ
 CODE_SMELL
-^
-java:S1168G"+Return an empty collection instead of null.(•πÔç8‰¶∆“¸0HÂ>RMAJORZ
+[	java:S108B")Either remove or fill this block of code.(ªåøÈ8ÙƒÜªÇ1H∑BRMAJORZ
 CODE_SMELL
-[	java:S108D")Either remove or fill this block of code.(ÆÀ˙√8ÙƒÜªÇ1H◊>RMAJORZ
-CODE_SMELL
-[	java:S108B")Either remove or fill this block of code.(ªåøÈ8ÙƒÜªÇ1H÷>RMAJORZ
-CODE_SMELL
-s
-java:S1226ì"GIntroduce a new variable instead of reusing the parameter "parameters".( È±n8Â“»ºÇ1HË>RMINORZBUG
-w
-java:S2147D"DCombine this catch with the one at line 66, which has the same body.(ÆÀ˙√8Â“»ºÇ1HÈ>RMINORZ
+`	java:S108?")Either remove or fill this block of code.(Ü«ëÉ¯ˇˇˇˇ8ÙƒÜªÇ1H∏BRMAJORZ
 CODE_SMELL
 q
-java:S1854ì">Remove this useless assignment to local variable "parameters".( È±n8Â“»ºÇ1HÌ>RMAJORZ
+java:S1854ì">Remove this useless assignment to local variable "parameters".( È±n8Â“»ºÇ1HπBRMAJORZ
 CODE_SMELL
+^
+java:S1168G"+Return an empty collection instead of null.(•πÔç8‰¶∆“¸0H∫BRMAJORZ
+CODE_SMELL
+w
+java:S2147D"DCombine this catch with the one at line 66, which has the same body.(ÆÀ˙√8Â“»ºÇ1HΩBRMINORZ
+CODE_SMELL
+s
+java:S1226ì"GIntroduce a new variable instead of reusing the parameter "parameters".( È±n8Â“»ºÇ1H¡BRMINORZBUG

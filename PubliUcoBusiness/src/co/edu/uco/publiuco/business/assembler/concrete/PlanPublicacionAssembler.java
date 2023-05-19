@@ -44,5 +44,10 @@ public final class PlanPublicacionAssembler implements Assembler<PlanPublicacion
 	public List<PlanPublicacionDomain> toDomainListFromEntityList(List<PlanPublicacionEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<PlanPublicacionDTO> toDtoListFromDomainList(List<PlanPublicacionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

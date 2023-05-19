@@ -43,5 +43,10 @@ public final class EstadoSuscripcionAssembler implements Assembler<EstadoSuscrip
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<EstadoSuscripcionDTO> toDtoListFromDomainList(List<EstadoSuscripcionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

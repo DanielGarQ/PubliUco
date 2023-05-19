@@ -43,5 +43,10 @@ public final class EstadoVersionAssembler implements Assembler<EstadoVersionDoma
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<EstadoVersionDTO> toDtoListFromDomainList(List<EstadoVersionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

@@ -44,5 +44,11 @@ public final class CalificacionAssembler implements Assembler<CalificacionDomain
 	public List<CalificacionDomain> toDomainListFromEntityList(List<CalificacionEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<CalificacionDTO> toDtoListFromDomainList(List<CalificacionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
+
 
 }

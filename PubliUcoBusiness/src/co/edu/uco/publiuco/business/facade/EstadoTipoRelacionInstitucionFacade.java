@@ -6,7 +6,7 @@ import co.edu.uco.publiuco.dto.EstadoTipoRelacionInstitucionDTO;
 
 public interface EstadoTipoRelacionInstitucionFacade {
 	
-	void register(EstadoTipoRelacionInstitucionDTO domain);
+	void register(EstadoTipoRelacionInstitucionDTO dto);
 	
 	List<EstadoTipoRelacionInstitucionDTO> list(EstadoTipoRelacionInstitucionDTO dto);
 	

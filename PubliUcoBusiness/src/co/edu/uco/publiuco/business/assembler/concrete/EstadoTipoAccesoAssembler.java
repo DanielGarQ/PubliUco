@@ -43,5 +43,10 @@ public final class EstadoTipoAccesoAssembler implements Assembler<EstadoTipoAcce
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<EstadoTipoAccesoDTO> toDtoListFromDomainList(List<EstadoTipoAccesoDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

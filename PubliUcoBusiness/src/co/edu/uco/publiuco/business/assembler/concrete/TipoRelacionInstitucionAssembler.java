@@ -44,5 +44,10 @@ public final class TipoRelacionInstitucionAssembler implements Assembler<TipoRel
 	public List<TipoRelacionInstitucionDomain> toDomainListFromEntityList(List<TipoRelacionInstitucionEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<TipoRelacionInstitucionDTO> toDtoListFromDomainList(List<TipoRelacionInstitucionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

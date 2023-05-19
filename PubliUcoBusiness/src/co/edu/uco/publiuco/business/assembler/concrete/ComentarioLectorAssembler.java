@@ -44,5 +44,11 @@ public final class ComentarioLectorAssembler implements Assembler<ComentarioLect
 	public List<ComentarioLectorDomain> toDomainListFromEntityList(List<ComentarioLectorEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<ComentarioLectorDTO> toDtoListFromDomainList(List<ComentarioLectorDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
+
 
 }

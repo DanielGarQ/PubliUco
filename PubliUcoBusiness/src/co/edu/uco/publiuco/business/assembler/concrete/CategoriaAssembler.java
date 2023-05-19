@@ -44,5 +44,11 @@ public final class CategoriaAssembler implements Assembler<CategoriaDomain, Cate
 	public List<CategoriaDomain> toDomainListFromEntityList(List<CategoriaEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<CategoriaDTO> toDtoListFromDomainList(List<CategoriaDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
+
 
 }

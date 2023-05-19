@@ -44,5 +44,10 @@ public final class PalabraClavePublicacionAssembler implements Assembler<Palabra
 	public List<PalabraClavePublicacionDomain> toDomainListFromEntityList(List<PalabraClavePublicacionEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+	
+	@Override
+	public List<PalabraClavePublicacionDTO> toDtoListFromDomainList(List<PalabraClavePublicacionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }

@@ -1,4 +1,7 @@
 
 w
-java:S1612-"EReplace this lambda with method reference 'this::toDomainFromEntity'.(àøÖ<8íßÂ“€1H°RMINORZ
+java:S1612-"EReplace this lambda with method reference 'this::toDomainFromEntity'.(àøÖ<8íßÂ“€1HéARMINORZ
+CODE_SMELL
+z
+java:S16122"BReplace this lambda with method reference 'this::toDtoFromDomain'.(ë¢÷ûÿÿÿÿ8¶Ë˜„ƒ1HìARMINORZ
 CODE_SMELL

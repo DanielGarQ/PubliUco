@@ -43,5 +43,10 @@ public final class EstadoPublicacionAssembler implements Assembler<EstadoPublica
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 		
 	}
+	
+	@Override
+	public List<EstadoPublicacionDTO> toDtoListFromDomainList(List<EstadoPublicacionDomain> domainList) {
+		return domainList.stream().map(domain -> toDtoFromDomain(domain)).toList();
+	}
 
 }
