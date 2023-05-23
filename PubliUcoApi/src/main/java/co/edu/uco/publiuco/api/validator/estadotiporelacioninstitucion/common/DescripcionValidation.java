@@ -19,7 +19,7 @@ public final class DescripcionValidation implements Validation<String>{
 	public final Result execute(String data) {
 		var result = Result.create();
 			
-		if (true) {  //validar longitud de la cadena no supere 250
+		if (!(data.length()<= 250)) {  //validar longitud de la cadena no supere 250
 			result.addMessage("La descripcion del estado de tipo relacion institucion no debe ser mayor a 250 caracteres");
 		}
 	

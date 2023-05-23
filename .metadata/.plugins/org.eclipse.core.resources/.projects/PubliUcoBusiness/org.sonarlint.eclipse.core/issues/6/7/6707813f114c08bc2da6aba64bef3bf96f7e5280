@@ -1,7 +1,7 @@
 
 t
-java:S1854,"BRemove this useless assignment to local variable "domainToCreate".(¸åŸL8ÂûÁ³ƒ1HêCRMAJORZ
+java:S1854,"BRemove this useless assignment to local variable "domainToCreate".(¸åŸL8ÂûÁ³ƒ1HíCRMAJORZ
 CODE_SMELL
 e
-java:S1481,"3Remove this unused "domainToCreate" local variable.(¸åŸL8ÂûÁ³ƒ1HëCRMINORZ
+java:S1481,"3Remove this unused "domainToCreate" local variable.(¸åŸL8ÂûÁ³ƒ1HîCRMINORZ
 CODE_SMELL

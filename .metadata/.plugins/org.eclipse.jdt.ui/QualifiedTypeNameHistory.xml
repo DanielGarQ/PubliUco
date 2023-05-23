@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.TipoRelacionInstitucionEntity"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.TipoRelacionInstitucionDomain"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.TipoRelacionInstitucionAssembler"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.business.TipoReporteBusiness"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.TipoReporteEntity"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.TipoReporteDomain"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.TipoReporteAssembler"/>
@@ -22,9 +18,7 @@
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.VersionSqlServerDAO"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.VersionDAO"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilSql"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.SqlDAO"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.EstadoTipoRelacionInstitucionAssembler"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.Messages.EstadoTipoRelacionInstitucionFacadeImplMessages"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
@@ -50,7 +44,6 @@
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.facade.impl.EstadoTipoRelacionInstitucionFacadeImpl"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.dto.EstadoTipoRelacionInstitucionDTO"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilText"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilObject"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.exception.PubliUcoDataException"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.exception.PubliUcoBusinessException"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.EstadoTipoRelacionInstitucionDomain"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Driver"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilObject"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.postgresql.EstadoTipoRelacionInstitucionPostgreSqlDAO"/>
 </qualifiedTypeNameHistroy>

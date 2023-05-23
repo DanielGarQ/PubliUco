@@ -5,15 +5,14 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.edu.uco.publiuco.api.controller.response.Response;
@@ -39,14 +38,9 @@ public final class EstadoTipoRelacionInstitucionController {
 	}
 	
 	@GetMapping
-	public ResponseEntity<Response<EstadoTipoRelacionInstitucionDTO>> list(@RequestParam EstadoTipoRelacionInstitucionDTO dto){
+	public ResponseEntity<Response<EstadoTipoRelacionInstitucionDTO>> list(@RequestBody EstadoTipoRelacionInstitucionDTO dto){
 		
 		List<EstadoTipoRelacionInstitucionDTO> list = new ArrayList<>();
-		list.add(EstadoTipoRelacionInstitucionDTO.create());
-		list.add(EstadoTipoRelacionInstitucionDTO.create());
-		list.add(EstadoTipoRelacionInstitucionDTO.create());
-		list.add(EstadoTipoRelacionInstitucionDTO.create());
-		list.add(EstadoTipoRelacionInstitucionDTO.create());
 		
 		List<String> messages = new ArrayList<>();
 		messages.add("Estados de tipos de relación institucion consultados exitosamente");
@@ -62,7 +56,7 @@ public final class EstadoTipoRelacionInstitucionController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<Response<EstadoTipoRelacionInstitucionDTO>> create(@RequestParam EstadoTipoRelacionInstitucionDTO dto) {
+	public ResponseEntity<Response<EstadoTipoRelacionInstitucionDTO>> create(@RequestBody EstadoTipoRelacionInstitucionDTO dto) {
 		
 		var statusCode = HttpStatus.OK;
 		var response = new Response<EstadoTipoRelacionInstitucionDTO>();
@@ -95,7 +89,7 @@ public final class EstadoTipoRelacionInstitucionController {
 	}
 	
 	@PutMapping("/{id}")
-	public EstadoTipoRelacionInstitucionDTO update(@PathVariable UUID id, @RequestParam EstadoTipoRelacionInstitucionDTO dto) {
+	public EstadoTipoRelacionInstitucionDTO update(@PathVariable UUID id, @RequestBody EstadoTipoRelacionInstitucionDTO dto) {
 		return dto.setIdentificador(id);
 	}
 	

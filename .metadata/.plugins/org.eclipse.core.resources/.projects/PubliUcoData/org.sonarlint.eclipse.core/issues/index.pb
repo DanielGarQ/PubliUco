@@ -215,3 +215,5 @@ Ssrc/co/edu/uco/publiuco/data/dao/relational/sqlserver/TipoRevisionSqlServerDAO.
 Nsrc/co/edu/uco/publiuco/data/dao/relational/sqlserver/VersionSqlServerDAO.java,4\9\4906f71c4418ee433a63627b4134c262406b17e8
 g
 7src/co/edu/uco/publiuco/data/dao/relational/SqlDAO.java,d\1\d1a0dfbfe26d02dca6b22d83f7a7309a834d104f
+–
+fsrc/co/edu/uco/publiuco/data/dao/relational/postgresql/EstadoTipoRelacionInstitucionPostgreSqlDAO.java,e\6\e6109680a8c74273effd3148d991352833dadb1e
