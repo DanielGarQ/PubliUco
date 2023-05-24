@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,11 +28,9 @@ import co.edu.uco.publiuco.dto.EstadoTipoRelacionInstitucionDTO;
 @RequestMapping("publiuco/api/v1/estadotiporelacioninstitucion")
 public final class EstadoTipoRelacionInstitucionController {
 	
-	private EstadoTipoRelacionInstitucionFacade facade;
+	private Logger log = LoggerFactory.getLogger(EstadoTipoRelacionInstitucionController.class);
 	
-	public EstadoTipoRelacionInstitucionController() {
-		facade = new EstadoTipoRelacionInstitucionFacadeImpl();
-	}
+	private EstadoTipoRelacionInstitucionFacade facade;
 	
 	@GetMapping("/dummy")
 	public EstadoTipoRelacionInstitucionDTO dummy() {
@@ -65,6 +65,7 @@ public final class EstadoTipoRelacionInstitucionController {
 			var result = RegistrarEstadoTipoRelacionInstitucionValidation.validate(dto);
 			
 			if (result.getMessages().isEmpty()) {
+				facade = new EstadoTipoRelacionInstitucionFacadeImpl();
 				facade.register(dto);
 				response.getMessages().add("El nuevo tipo relación institucion se ha registrado de forma satidfactoria");
 			}else {
@@ -75,13 +76,11 @@ public final class EstadoTipoRelacionInstitucionController {
 		}catch(PubliUcoException exception) {
 			statusCode = HttpStatus.BAD_REQUEST;
 			response.getMessages().add(exception.getUserMessage());
-			System.err.println(exception.getTechnicalMessage());
-			System.err.println(exception.getType());
-			exception.printStackTrace();
-		}catch (Exception exception) {
+			log.error(exception.getType().toString().concat("-").concat(exception.getTechnicalMessage()), exception);
+		}catch (final Exception exception) {
 			statusCode = HttpStatus.INTERNAL_SERVER_ERROR;
 			response.getMessages().add("Se ha presentadop un problema inesperado, por favor intente de nuevo. Si el problema persiste contacte al administrador de la aplicacion");
-			System.err.println(exception.getMessage());
+			log.error("se ha presentado un problmea inesperado.Por favor validar la consola de errores...", exception);
 			exception.printStackTrace();
 		}
 		

@@ -1,7 +1,6 @@
 package co.edu.uco.publiuco.data.dao.factory.relational.postgresql;
 
 import java.sql.Connection;
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -76,7 +75,7 @@ public final class PostgresSqlDAOFactory extends DAOFactory{
 	protected final void abrirConexion() {
 		try {
 			
-			conexion = DriverManager.getConnection(URL_BASE_DE_DATOS,USUARIO_BASE_DE_DATOS, CLAVE_BASE_DE_DATOS  );
+			conexion = DriverManager.getConnection(URL_BASE_DE_DATOS,USUARIO_BASE_DE_DATOS, CLAVE_BASE_DE_DATOS );
 			
 		} catch (SQLException exception) {
 			exception.printStackTrace();

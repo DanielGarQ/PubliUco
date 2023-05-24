@@ -2,7 +2,7 @@ package co.edu.uco.publiuco.crosscutting.exception;
 
 public final class PubliUcoBusinessException extends PubliUcoException {
 
-	private static final long serialVersionUID = -4228650668023637895L;
+	private static final long serialVersionUID = 1282759272700155808L;
 	
 	private PubliUcoBusinessException(String technicalMessage, String userMessage, Throwable rootCause) {
 		super(technicalMessage, userMessage, rootCause, ExceptionType.BUSINESS);

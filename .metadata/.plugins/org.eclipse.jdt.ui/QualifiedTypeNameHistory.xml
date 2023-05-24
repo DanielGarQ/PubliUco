@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.TipoReporteEntity"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.domain.TipoReporteDomain"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.TipoReporteAssembler"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.sqlserver.TipoReporteSqlServerDAO"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.TipoReporteDAO"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.business.TipoRevisionBusiness"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.business.assembler.concrete.TipoRevisionAssembler"/>
@@ -47,7 +43,6 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.exception.PubliUcoDataException"/>
-    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.exception.PubliUcoException"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilUUID"/>
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.entities.EstadoTipoRelacionInstitucionEntity"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.utils.UtilObject"/>
     <fullyQualifiedTypeName name="co.edu.uco.publiuco.data.dao.relational.postgresql.EstadoTipoRelacionInstitucionPostgreSqlDAO"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="co.edu.uco.publiuco.crosscutting.exception.PubliUcoException"/>
+    <fullyQualifiedTypeName name="ch.qos.logback.classic.Logger"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
 </qualifiedTypeNameHistroy>
