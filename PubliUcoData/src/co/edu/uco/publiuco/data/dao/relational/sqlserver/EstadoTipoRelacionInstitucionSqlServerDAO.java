@@ -183,7 +183,7 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO extends SqlDAO<Esta
 			
 			if (!UtilText.getUtilText().isEmpty(entity.getDescripcion())) {
 				parameters.add(entity.getDescripcion());
-				where.append(setWhere ? "WHERE " : "AND").append("descripçion LIKE %?% ");
+				where.append(setWhere ? "WHERE " : "AND").append("descripcion LIKE %?% ");
 			}
 		}
 		return where.toString();

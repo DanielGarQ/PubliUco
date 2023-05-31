@@ -6,7 +6,7 @@ import co.edu.uco.publiuco.entities.CategoriaAdministradorCategoriaEntity;
 
 public interface CategoriaAdministradorCategoriaDAO {
 	
-void create(CategoriaAdministradorCategoriaEntity entity);
+	void create(CategoriaAdministradorCategoriaEntity entity);
 	
 	List<CategoriaAdministradorCategoriaEntity> read(CategoriaAdministradorCategoriaEntity entity);
 	

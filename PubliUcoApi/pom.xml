@@ -14,7 +14,9 @@
 	<name>PubliUcoApi</name>
 	<description>Componente encargado de exponer como API los servicios de negocio a los diferentes clientes que podrán consumirlos como servicios REST.</description>
 	<properties>
-		<java.version>20</java.version>
+  		<sonar.organization>danielgarq</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<java.version>20</java.version>		
 	</properties>
 	<dependencies>
 		<dependency>
@@ -52,5 +54,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
